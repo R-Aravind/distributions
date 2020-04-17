@@ -64,7 +64,7 @@ class Binomial(Distribution):
         """
 
         self.n = len(self.data)
-        self.p = self.data / self.n
+        self.p = sum(self.data) / self.n
         self.mean = self.calculate_mean()
         self.stdev = self.calculate_stdev()
 
